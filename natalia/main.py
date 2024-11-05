@@ -17,9 +17,9 @@ def load_image_from_path(path):
     return Image.open(path)
 
 
-image = load_image_from_path("C:/Users/nekos/OneDrive/Escritorio/MasOrange/aura-sr/img/infile.jpg").resize((81, 120))
+image = load_image_from_path("natalia/resized/Interestelar_2160x2880_120x160.jpg").resize()
 upscaled_image = aura_sr.upscale_4x(image)
 
 # Guarda la imagen superresolucionada
-upscaled_image.save("C:/Users/nekos/OneDrive/Escritorio/MasOrange/aura-sr/img/output_2.jpg")
+upscaled_image.save("natalia/scaled/output_2.jpg")
 
